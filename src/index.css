@@ -16,6 +16,8 @@
   --font-roboto: "Roboto", "sans-serif";
   --font-orbitron: "Orbitron", "sans-serif";
 
+  --shadow-card: 0 4px 8px rgba(0, 213, 255, 0.75);
+
   --container-hero: 1300px;
   --container-content: 1200px;
 
