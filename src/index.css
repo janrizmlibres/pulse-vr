@@ -1,1 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #00d4ff;
+
+  --color-light-1: #f1f3f5;
+  --color-light-2: #adb5bd;
+  --color-light-3: #101212;
+
+  --color-shade-1: #007f99;
+  --color-shade-2: #006a80;
+  --color-shade-3: #002a33;
+
+  --font-roboto: "Roboto", "sans-serif";
+  --font-orbitron: "Orbitron", "sans-serif";
+}
