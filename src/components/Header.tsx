@@ -5,7 +5,7 @@ const links = ["Features", "How it works", "Showcase", "Pricing", "FAQ"];
 
 const Header = () => {
   return (
-    <header className="flex h-24 items-center justify-between bg-mono-3">
+    <header className="flex h-24 items-center justify-between bg-mono-3 px-12">
       <a href="#">
         <img src={logo} alt="PulseVR Logo" className="h-9" />
       </a>
@@ -26,7 +26,7 @@ const Header = () => {
             <Button
               label="Sign In"
               iconName="UserCircle"
-              className="bg-linear-to-r from-primary to-shade-2 transition-all duration-300 hover:to-shade-1 active:to-shade-1"
+              className="bg-linear-to-r from-shade-1 to-shade-2 px-3 py-2"
             />
           </li>
         </ul>
