@@ -16,3 +16,21 @@
   --font-roboto: "Roboto", "sans-serif";
   --font-orbitron: "Orbitron", "sans-serif";
 }
+
+@theme inline {
+  --background-image-btn-gradient: linear-gradient(
+    90deg,
+    var(--color-shade-1),
+    var(--color-shade-2)
+  );
+
+  --background-image-hero:
+    linear-gradient(to right, rgba(0, 42, 51, 0.8) 30%, rgba(0, 0, 0, 0)),
+    url("assets/images/hero.jpg");
+}
+
+@layer components {
+  .heading {
+    @apply font-orbitron font-semibold;
+  }
+}

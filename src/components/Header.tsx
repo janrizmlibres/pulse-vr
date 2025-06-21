@@ -26,7 +26,8 @@ const Header = () => {
             <Button
               label="Sign In"
               iconName="UserCircle"
-              className="bg-linear-to-r from-shade-1 to-shade-2 px-3 py-2"
+              type="gradient"
+              isLink
             />
           </li>
         </ul>
