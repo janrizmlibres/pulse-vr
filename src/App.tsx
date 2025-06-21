@@ -1,15 +1,16 @@
+import Essentials from "./components/Essentials";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="font-roboto text-white">
+    <>
       <Header />
-
       <main>
         <Hero />
+        <Essentials />
       </main>
-    </div>
+    </>
   );
 }
 

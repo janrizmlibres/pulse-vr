@@ -3,9 +3,9 @@ import Button from "./shared/Button";
 const Hero = () => {
   return (
     <section className="bg-hero bg-cover pt-40 pb-48">
-      <div className="mx-auto grid max-w-7xl grid-cols-2 px-8">
+      <div className="container-hero grid grid-cols-2">
         <div>
-          <h1 className="mb-8 font-orbitron text-5xl leading-[1.3] font-semibold">
+          <h1 className="mb-8 heading-primary">
             Dive Into VR: Your Gaming Adventure Starts Here
           </h1>
           <p className="mb-12 text-xl leading-[1.7]">
