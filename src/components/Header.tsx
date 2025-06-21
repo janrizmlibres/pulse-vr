@@ -1,3 +1,4 @@
+import Button from "./shared/Button";
 import logo from "../assets/images/logo.png";
 
 const links = ["Features", "How it works", "Showcase", "Pricing", "FAQ"];
@@ -22,9 +23,11 @@ const Header = () => {
             </li>
           ))}
           <li>
-            <a href="#">
-              <span>Sign In</span>
-            </a>
+            <Button
+              label="Sign In"
+              iconName="UserCircle"
+              className="bg-linear-to-r from-primary to-shade-2 transition-all duration-300 hover:to-shade-1 active:to-shade-1"
+            />
           </li>
         </ul>
       </nav>
