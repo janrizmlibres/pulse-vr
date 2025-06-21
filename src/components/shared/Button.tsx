@@ -35,7 +35,7 @@ const Button = ({
       [
         "bg-mono-3 hover:border-shade-1 hover:bg-mono-1 hover:text-mono-3 active:border-shade-1",
         "active:bg-mono-1 active:text-mono-3",
-      ].join(" ")
+      ].join("\\s")
   );
 
   const content = (

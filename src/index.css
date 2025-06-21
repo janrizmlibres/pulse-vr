@@ -29,6 +29,12 @@
     url("assets/images/hero.jpg");
 }
 
+@layer base {
+  * {
+    @apply box-border;
+  }
+}
+
 @layer components {
   .heading {
     @apply font-orbitron font-semibold;
