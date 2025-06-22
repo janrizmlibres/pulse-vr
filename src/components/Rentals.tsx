@@ -6,7 +6,7 @@ import terms from "../assets/images/rentals/terms.jpg";
 
 const Rentals = () => {
   return (
-    <section className="bg-shade-3 py-24">
+    <section className="bg-shade-4 py-24">
       <Banner
         heading="Premium VR Gear"
         subheading="Top-tier VR without the price tag"

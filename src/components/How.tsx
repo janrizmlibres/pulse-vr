@@ -34,7 +34,7 @@ const How = () => {
           {steps.map(({ number, title, description }) => (
             <li
               key={number}
-              className="flex cursor-default items-center gap-8 rounded-xl border-2 border-solid border-shade-3 p-8 transition-all duration-300 hover:shadow-step-item"
+              className="flex cursor-default items-center gap-8 rounded-xl border-2 border-solid border-shade-4 p-8 transition-all duration-300 hover:shadow-step-item"
             >
               <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-mono-1 font-orbitron text-2xl font-semibold text-mono-3">
                 {number}
