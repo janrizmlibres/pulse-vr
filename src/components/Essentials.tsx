@@ -1,4 +1,4 @@
-import Card from "./shared/Card";
+import FeatureCard from "./shared/FeatureCard";
 import TitleBlock from "./shared/TitleBlock";
 import library from "../assets/images/essentials/library.png";
 import multi from "../assets/images/essentials/multi.png";
@@ -39,7 +39,7 @@ const Essentials = () => {
 
       <div className="container-content grid grid-cols-3 gap-x-12">
         {features.map(({ image, title, description }) => (
-          <Card
+          <FeatureCard
             key={title}
             imageSrc={image.src}
             altText={image.alt}

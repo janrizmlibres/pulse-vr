@@ -5,7 +5,7 @@ interface Props {
   description: string;
 }
 
-const Card = ({ imageSrc, altText, title, description }: Props) => {
+const FeatureCard = ({ imageSrc, altText, title, description }: Props) => {
   return (
     <div className="relative">
       <span className="absolute inset-0 z-0 mt-16 rounded-xl shadow-card"></span>
@@ -18,4 +18,4 @@ const Card = ({ imageSrc, altText, title, description }: Props) => {
   );
 };
 
-export default Card;
+export default FeatureCard;

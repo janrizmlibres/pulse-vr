@@ -1,6 +1,9 @@
+import SpotlightCard from "./shared/SpotlightCard";
 import TitleBlock from "./shared/TitleBlock";
 import VideoPanel from "./shared/VideoPanel";
 import asgardImg from "../assets/images/spotlight/asgard.jpg";
+import astrobot from "../assets/images/spotlight/astro-bot.jpg";
+import beatSaber from "../assets/images/spotlight/beat-saber.jpg";
 import memoreumImg from "../assets/images/spotlight/memoreum.jpg";
 import asgardMp4 from "../assets/videos/asgard.mp4";
 import asgardWebm from "../assets/videos/asgard.webm";
@@ -36,15 +39,19 @@ const Spotlight = () => {
       </div>
 
       <div className="container-content grid grid-cols-2 gap-8">
-        <figure>
-          <img src={asgardImg} alt="Asgard game front cover art" />
-          <figcaption className="text-center">Asgard's Wrath 2</figcaption>
-        </figure>
+        <SpotlightCard
+          imageSrc={astrobot}
+          altText="Astro Bot Rescue Mission game front cover art"
+          title="Astro Bot Rescue Mission"
+          description="Join Astro Bot on a mission to rescue his friends in this charming platformer"
+        />
 
-        <figure>
-          <img src={memoreumImg} alt="Memoreum game front cover art" />
-          <figcaption className="text-center">Memoreum</figcaption>
-        </figure>
+        <SpotlightCard
+          imageSrc={beatSaber}
+          altText="Beat Saber game front cover art"
+          title="Beat Saber"
+          description="Slice through beats in this rhythm-based VR game that will get you moving"
+        />
       </div>
     </section>
   );
