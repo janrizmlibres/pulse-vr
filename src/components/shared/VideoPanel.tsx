@@ -1,24 +1,38 @@
-const VideoPanel = () => {
+interface Props {
+  webmSrc: string;
+  mp4Src: string;
+  imageSrc: string;
+  altText: string;
+  title: string;
+  description: string;
+}
+
+const VideoPanel = ({
+  webmSrc,
+  mp4Src,
+  imageSrc,
+  altText,
+  title,
+  description,
+}: Props) => {
   return (
-    <div className="spotlight__panel">
-      <video className="spotlight__vid" autoPlay loop>
-        <source src="vid/memoreum.webm" type="video/webm" />
-        <source src="vid/memoreum.mp4" type="video/mp4" />
+    <div className="relative overflow-hidden rounded-xl">
+      <video className="w-full" autoPlay loop>
+        <source src={webmSrc} type="video/webm" />
+        <source src={mp4Src} type="video/mp4" />
         Your browser doesn't support HTML video.
       </video>
 
-      <div className="spotlight__overlay">
-        <div className="spotlight__overlay-inner">
+      <div className="absolute inset-0 flex flex-col justify-end bg-spotlight p-12 pr-24">
+        <div className="grid grid-cols-[45fr_55fr] items-center gap-16">
           <img
-            className="spotlight__img"
-            src="img/spotlight/memoreum.jpg"
-            alt="Memoreum game front cover art"
+            className="w-full rounded-xl border-2 border-solid border-shade-4"
+            src={imageSrc}
+            alt={altText}
           />
           <div>
-            <h3 className="margin-bottom-sm heading-tertiary">Memoreum</h3>
-            <p className="text-body">
-              Battle across the galaxy in this multiplayer space shooter
-            </p>
+            <h3 className="mb-4 heading-tertiary">{title}</h3>
+            <p className="body-text">{description}</p>
           </div>
         </div>
       </div>
