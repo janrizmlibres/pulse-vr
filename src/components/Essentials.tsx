@@ -3,11 +3,13 @@ import library from "../assets/images/essentials/library.png";
 import multi from "../assets/images/essentials/multi.png";
 import release from "../assets/images/essentials/release.png";
 
-const features: {
+interface Feature {
   image: { src: string; alt: string };
   title: string;
   description: string;
-}[] = [
+}
+
+const features: Feature[] = [
   {
     image: { src: library, alt: "VR game discs" },
     title: "Massive Library",

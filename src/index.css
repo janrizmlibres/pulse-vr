@@ -17,21 +17,20 @@
   --font-orbitron: "Orbitron", "sans-serif";
 
   --shadow-card: 0 4px 8px rgba(0, 213, 255, 0.75);
+  --shadow-panel: 0 24px 48px rgba(0, 0, 0, 0.25);
 
   --container-hero: 1300px;
   --container-content: 1200px;
 
-  --heading-font-size-primary: 52px;
-  --heading-font-size-secondary: 44px;
-  --heading-font-size-tertiary: 30px;
-
-  --heading-line-height-primary: 1.3;
-  --heading-line-height-secondary: 1.2;
-  --heading-line-height-tertiary: 1.4;
-
   --background-image-hero:
     linear-gradient(to right, rgba(0, 42, 51, 0.8) 30%, rgba(0, 0, 0, 0)),
     url("assets/images/hero.jpg");
+
+  --background-image-panel: linear-gradient(
+    15deg,
+    rgba(0, 0, 0, 0.85) 25%,
+    rgba(0, 0, 0, 0)
+  );
 }
 
 @theme inline {
@@ -48,10 +47,20 @@
   }
 }
 
-@utility heading-* {
-  @apply font-orbitron font-semibold;
-  font-size: --value(--heading-font-size- *);
-  line-height: --value(--heading-line-height- *);
+@utility heading-primary {
+  @apply font-orbitron text-[52px] leading-[1.3] font-semibold;
+}
+
+@utility heading-secondary {
+  @apply font-orbitron text-[44px] leading-[1.2] font-semibold;
+}
+
+@utility heading-tertiary {
+  @apply font-orbitron text-3xl leading-[1.4] font-semibold;
+}
+
+@utility heading-tertiary-sm {
+  @apply font-orbitron text-2xl leading-[1.4] font-semibold;
 }
 
 @utility subheading {
