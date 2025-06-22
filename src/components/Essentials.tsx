@@ -1,4 +1,5 @@
 import Card from "./shared/Card";
+import TitleBlock from "./shared/TitleBlock";
 import library from "../assets/images/essentials/library.png";
 import multi from "../assets/images/essentials/multi.png";
 import release from "../assets/images/essentials/release.png";
@@ -31,12 +32,10 @@ const features: Feature[] = [
 const Essentials = () => {
   return (
     <section className="bg-mono-3 py-24">
-      <div className="container-content">
-        <p className="mb-4 subheading">PulseVR Essentials</p>
-        <h2 className="mb-16 heading-secondary">
-          Your gateway to immersive VR gaming
-        </h2>
-      </div>
+      <TitleBlock
+        heading="Your gateway to immersive VR gaming"
+        subheading="PulseVR Essentials"
+      />
 
       <div className="container-content grid grid-cols-3 gap-x-12">
         {features.map(({ image, title, description }) => (

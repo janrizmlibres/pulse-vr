@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import How from "./components/How";
 import Rentals from "./components/Rentals";
+import Spotlight from "./components/Spotlight";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Essentials />
         <Rentals />
         <How />
+        <Spotlight />
       </main>
     </>
   );
