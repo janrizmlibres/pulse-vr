@@ -2,12 +2,11 @@ interface Props {
   heading: string;
   subheading: string;
   description: string;
-  className?: string;
 }
 
-const Banner = ({ heading, subheading, description, className }: Props) => {
+const Banner = ({ heading, subheading, description }: Props) => {
   return (
-    <div className={`mb-16 flex items-center justify-between ${className}`}>
+    <div className="container-content mb-16 flex items-center justify-between">
       <div className="basis-1/2">
         <p className="mb-4 subheading">{heading}</p>
         <h2 className="heading-secondary">{subheading}</h2>

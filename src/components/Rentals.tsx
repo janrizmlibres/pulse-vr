@@ -11,7 +11,6 @@ const Rentals = () => {
         heading="Premium VR Gear"
         subheading="Top-tier VR without the price tag"
         description="Rent premium VR headsets and full kits for a flexible, cost-effective way to experience top-tier virtual reality gaming."
-        className="container-content"
       />
 
       <div className="container-content grid grid-cols-2 grid-rows-2 gap-8">
