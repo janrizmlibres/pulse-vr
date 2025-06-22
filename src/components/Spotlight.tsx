@@ -16,14 +16,14 @@ const Spotlight = () => {
         className="text-center"
       />
 
-      <div className="container-content space-y-12">
+      <div className="container-content mb-12 space-y-8">
         <VideoPanel
           webmSrc={memoreumWebm}
           mp4Src={memoreumMp4}
           imageSrc={memoreumImg}
           altText="Memoreum game front cover art"
           title="Memoreum"
-          description="Battle across the galaxy in this multiplayer space shooter"
+          description="Experience a thrilling sci-fi horror adventure in a dystopian future"
         />
         <VideoPanel
           webmSrc={asgardWebm}
@@ -33,6 +33,18 @@ const Spotlight = () => {
           title="Asgard's Wrath 2"
           description="Embark on a journey through Norse mythology in this epic adventure"
         />
+      </div>
+
+      <div className="container-content grid grid-cols-2 gap-8">
+        <figure>
+          <img src={asgardImg} alt="Asgard game front cover art" />
+          <figcaption className="text-center">Asgard's Wrath 2</figcaption>
+        </figure>
+
+        <figure>
+          <img src={memoreumImg} alt="Memoreum game front cover art" />
+          <figcaption className="text-center">Memoreum</figcaption>
+        </figure>
       </div>
     </section>
   );

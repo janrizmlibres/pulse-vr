@@ -1,7 +1,7 @@
 import TitleBlock from "./shared/TitleBlock";
 import whyImg from "../assets/images/why.jpg";
 
-const items = [
+const items: { title: string; description: string }[] = [
   {
     title: "Unrivaled Variety",
     description:
