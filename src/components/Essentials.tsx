@@ -39,8 +39,14 @@ const Essentials = () => {
       </div>
 
       <div className="container-content grid grid-cols-3 gap-x-12">
-        {features.map(({ image, ...text }) => (
-          <Card imageSrc={image.src} altText={image.alt} {...text} />
+        {features.map(({ image, title, description }) => (
+          <Card
+            key={title}
+            imageSrc={image.src}
+            altText={image.alt}
+            title={title}
+            description={description}
+          />
         ))}
       </div>
     </section>

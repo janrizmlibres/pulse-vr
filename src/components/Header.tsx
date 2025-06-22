@@ -13,7 +13,7 @@ const Header = () => {
       <nav>
         <ul className="flex items-center gap-12">
           {links.map((link) => (
-            <li>
+            <li key={link}>
               <a
                 href="#"
                 className="text-lg font-medium text-white transition-all duration-300 hover:text-primary active:text-primary"
