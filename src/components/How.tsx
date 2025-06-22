@@ -1,3 +1,5 @@
+import AsidePanel from "./shared/AsidePanel";
+
 const steps = [
   {
     number: "01",
@@ -19,17 +21,11 @@ const steps = [
 const How = () => {
   return (
     <section className="bg-mono-3 py-24">
-      <div className="container-content grid grid-cols-2 gap-x-12">
-        <div>
-          <p className="mb-4 subheading">Getting Started with PulseVR</p>
-          <h2 className="mb-8 heading-secondary">
-            Jump into VR in three easy steps
-          </h2>
-          <p className="body-text">
-            Ready to play? Sign up now and get your first week free!
-          </p>
-        </div>
-
+      <AsidePanel
+        heading="Jump into VR in three easy steps"
+        subheading="Getting Started with PulseVR"
+        description="Ready to play? Sign up now and get your first week free!"
+      >
         <ol className="flex flex-col gap-6">
           {steps.map(({ number, title, description }) => (
             <li
@@ -48,7 +44,7 @@ const How = () => {
             </li>
           ))}
         </ol>
-      </div>
+      </AsidePanel>
     </section>
   );
 };
