@@ -40,7 +40,7 @@ const Testimonials = () => {
       <Banner
         heading="Hear from our VR community"
         subheading="Testimonials"
-        description="Hear from passionate gamers about how PulseVR’s immersive experiences and community events transformed their VR gaming journey."
+        description="Hear from passionate gamers about how PulseVR transformed their VR gaming journey."
       />
 
       <div className="container-content grid grid-cols-3 gap-6">

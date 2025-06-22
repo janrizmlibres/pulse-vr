@@ -12,7 +12,7 @@ import memoreumWebm from "../assets/videos/memoreum.webm";
 
 const Spotlight = () => {
   return (
-    <section className="bg-shade-3 py-24">
+    <section className="bg-shade-4 py-24">
       <TitleBlock
         heading="Explore epic worlds waiting for you"
         subheading="Featured VR Titles"

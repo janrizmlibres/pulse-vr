@@ -24,13 +24,13 @@ const PriceCard = ({ tier, price, features, isHighlighted }: Props) => {
 
       <Button label="Sign Up" className="mb-6 w-full" />
 
-      <ol>
+      <ul>
         {features.map((feature, index) => (
           <li key={index} className="border-b-1 border-b-mono-2">
             {feature}
           </li>
         ))}
-      </ol>
+      </ul>
     </div>
   );
 };
