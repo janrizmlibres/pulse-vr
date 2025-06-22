@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import How from "./components/How";
 import Rentals from "./components/Rentals";
 import Spotlight from "./components/Spotlight";
+import Why from "./components/Why";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Rentals />
         <How />
         <Spotlight />
+        <Why />
       </main>
     </>
   );
