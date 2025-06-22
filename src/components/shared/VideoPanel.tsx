@@ -16,7 +16,7 @@ const VideoPanel = ({
   description,
 }: Props) => {
   return (
-    <div className="relative overflow-hidden rounded-xl border-2 border-solid border-shade-4">
+    <div className="relative overflow-hidden rounded-xl border-2 border-solid border-shade-2">
       <video className="w-full" autoPlay loop>
         <source src={webmSrc} type="video/webm" />
         <source src={mp4Src} type="video/mp4" />
@@ -26,7 +26,7 @@ const VideoPanel = ({
       <div className="absolute inset-0 flex flex-col justify-end bg-spotlight p-12 pr-24">
         <div className="grid grid-cols-[45fr_55fr] items-center gap-16">
           <img
-            className="w-full rounded-xl border-2 border-solid border-shade-4"
+            className="w-full rounded-xl border-2 border-solid border-shade-2"
             src={imageSrc}
             alt={altText}
           />
