@@ -36,7 +36,7 @@ const userProfiles: UserProfile[] = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-shade-3 py-12">
+    <section className="bg-mono-4 py-12">
       <Banner
         heading="Hear from our VR community"
         subheading="Testimonials"
@@ -45,7 +45,7 @@ const Testimonials = () => {
 
       <div className="container-content grid grid-cols-3 gap-6">
         {userProfiles.map(({ name, title, image, quote }) => (
-          <div key={name} className="rounded-xl bg-mono-3 p-8">
+          <div key={name} className="rounded-xl bg-mono-4 p-8">
             <img
               src={image}
               alt={`${name} Profile`}

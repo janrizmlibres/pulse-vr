@@ -20,7 +20,7 @@ const steps = [
 
 const How = () => {
   return (
-    <section className="bg-mono-3 py-24">
+    <section className="bg-mono-4 py-24">
       <AsidePanel
         heading="Jump into VR in three easy steps"
         subheading="Getting Started with PulseVR"
@@ -32,7 +32,7 @@ const How = () => {
               key={number}
               className="flex cursor-default items-center gap-8 rounded-xl border-2 border-solid border-shade-4 p-8 transition-all duration-300 hover:shadow-step-item"
             >
-              <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-mono-1 font-orbitron text-2xl font-semibold text-mono-3">
+              <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-mono-1 font-orbitron text-2xl font-semibold text-mono-4">
                 {number}
               </div>
               <div>

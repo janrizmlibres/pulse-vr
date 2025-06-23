@@ -30,7 +30,7 @@ const questions: Question[] = [
 
 const FAQ = () => {
   return (
-    <section className="bg-mono-3 py-24">
+    <section className="bg-shade-4 py-24">
       <AsidePanel
         heading="Answers to your VR gaming questions"
         subheading="PulseVR Support"

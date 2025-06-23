@@ -31,7 +31,7 @@ const features: Feature[] = [
 
 const Essentials = () => {
   return (
-    <section className="bg-mono-3 py-24">
+    <section className="bg-mono-4 py-24">
       <TitleBlock
         heading="Your gateway to immersive VR gaming"
         subheading="PulseVR Essentials"

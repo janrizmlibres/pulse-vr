@@ -24,7 +24,7 @@ const items: { title: string; description: string }[] = [
 
 const Why = () => {
   return (
-    <section className="bg-mono-3 py-24">
+    <section className="bg-shade-4 py-24">
       <TitleBlock
         heading="Unmatched VR experiences for every gamer"
         subheading="Why Choose PulseVR"

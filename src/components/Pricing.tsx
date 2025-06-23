@@ -3,13 +3,13 @@ import TitleBlock from "./shared/TitleBlock";
 
 const Pricing = () => {
   return (
-    <section className="bg-shade-4 py-24">
+    <section className="bg-mono-3 py-24">
       <TitleBlock
         heading="Find the perfect plan for your VR journey"
         subheading="PulseVR Plans"
       />
 
-      <div className="container-content grid grid-cols-3 rounded-xl bg-mono-3 px-24 py-16">
+      <div className="container-content grid grid-cols-3 rounded-xl bg-mono-4 px-24 py-16">
         <PriceCard
           tier="Starter"
           price="$14.99"
