@@ -45,7 +45,7 @@ const Testimonials = () => {
 
       <div className="container-content grid grid-cols-3 gap-6">
         {userProfiles.map(({ name, title, image, quote }) => (
-          <div key={name} className="rounded-xl bg-shade-4 p-8">
+          <div key={name} className="rounded-xl bg-mono-3 p-8">
             <img
               src={image}
               alt={`${name} Profile`}
