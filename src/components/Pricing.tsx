@@ -9,7 +9,10 @@ const Pricing = () => {
         subheading="PulseVR Plans"
       />
 
-      <div className="container-content grid grid-cols-3 rounded-xl bg-mono-4 px-24 py-16">
+      <div
+        id="pricing"
+        className="container-content grid grid-cols-3 rounded-xl bg-mono-4 px-24 py-16"
+      >
         <PriceCard
           tier="Starter"
           price="$14.99"

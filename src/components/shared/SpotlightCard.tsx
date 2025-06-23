@@ -16,7 +16,12 @@ const SpotlightCard = ({ imageSrc, altText, title, description }: Props) => {
       <h3 className="heading-tertiary">{title}</h3>
       <figcaption className="body-text">{description}</figcaption>
       <p className="mb-6 font-semibold tracking-wider">Available Now</p>
-      <Button label="Buy Now" type="gradient" className="rounded-xl" />
+      <Button
+        label="Buy Now"
+        type="gradient"
+        className="rounded-xl"
+        href="#pricing"
+      />
     </figure>
   );
 };

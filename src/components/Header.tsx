@@ -15,7 +15,7 @@ const Header = () => {
           {links.map((link) => (
             <li key={link}>
               <a
-                href="#"
+                href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
                 className="text-lg font-medium text-white transition-all duration-300 hover:text-primary active:text-primary"
               >
                 {link}
@@ -27,7 +27,7 @@ const Header = () => {
               label="Sign In"
               iconName="UserCircle"
               type="gradient"
-              isLink
+              href="#"
             />
           </li>
         </ul>

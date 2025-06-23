@@ -20,7 +20,7 @@ const steps = [
 
 const How = () => {
   return (
-    <section className="bg-mono-4 py-24">
+    <section id="how-it-works" className="bg-mono-4 py-24">
       <AsidePanel
         heading="Jump into VR in three easy steps"
         subheading="Getting Started with PulseVR"

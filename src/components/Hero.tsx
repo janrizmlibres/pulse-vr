@@ -17,9 +17,9 @@ const Hero = () => {
             label="Start Your Free Week"
             type="plain"
             className="mr-4"
-            isLink
+            href="#pricing"
           />
-          <Button label="Explore Games &darr;" isLink />
+          <Button label="Explore Games &darr;" href="#showcase" />
         </div>
       </div>
     </section>

@@ -14,6 +14,7 @@ const Spotlight = () => {
   return (
     <section className="bg-mono-3 py-24">
       <TitleBlock
+        id="showcase"
         heading="Explore epic worlds waiting for you"
         subheading="Featured VR Titles"
         className="text-center"

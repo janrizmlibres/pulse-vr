@@ -25,7 +25,7 @@ const PriceCard = ({ tier, price, features, isHighlighted }: Props) => {
       </header>
 
       <Button
-        label="Get started"
+        label="Start free trial"
         type="gradient"
         className="mb-6 w-full justify-center rounded-xl"
       />
