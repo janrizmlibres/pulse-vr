@@ -52,7 +52,7 @@
 
 @layer base {
   body {
-    @apply font-roboto text-white;
+    @apply font-roboto text-mono-1;
   }
 }
 

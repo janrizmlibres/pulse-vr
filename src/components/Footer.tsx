@@ -76,7 +76,7 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-mono-2 pt-8">
           <p className="text-center body-text">
-            &copy; 2024 PulseVR Gaming, Inc. All rights reserved.
+            &copy; 2025 PulseVR Gaming, Inc. All rights reserved.
           </p>
         </div>
       </div>

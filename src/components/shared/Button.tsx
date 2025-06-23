@@ -27,9 +27,9 @@ const Button = ({
   isLink = false,
 }: Props) => {
   const styles = cn(
-    `inline-flex cursor-pointer items-center gap-2 rounded-full border-3 border-solid border-primary ${className}`,
-    "text-lg font-semibold uppercase transition-all duration-300 hover:bg-shade-1 active:bg-shade-1",
-    iconName ? "px-3 py-2" : "p-4",
+    "inline-flex cursor-pointer items-center gap-2 rounded-full border-3 border-solid border-primary",
+    `text-lg font-semibold uppercase transition-all duration-300 hover:bg-shade-1 active:bg-shade-1 ${className}`,
+    iconName ? "px-3 py-2" : "px-4 py-3",
     type === "gradient" && "bg-btn-gradient",
     type === "plain" &&
       [
