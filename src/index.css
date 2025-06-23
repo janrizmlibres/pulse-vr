@@ -48,6 +48,17 @@
     var(--color-shade-1),
     var(--color-shade-2)
   );
+
+  --background-image-testimonial-gradient: linear-gradient(
+    to bottom right,
+    /* var(--color-primary),
+    var(--color-shade-1) 20%,
+    var(--color-shade-2) 30%,
+    var(--color-shade-4) */
+      var(--color-shade-2),
+    var(--color-shade-3),
+    var(--color-shade-4)
+  );
 }
 
 @layer base {

@@ -12,7 +12,7 @@ interface Props {
 
 const PriceCard = ({ tier, price, features, isHighlighted }: Props) => {
   return (
-    <div className={cn("rounded-xl p-10", isHighlighted && "bg-mono-3")}>
+    <div className={cn("rounded-xl p-10", isHighlighted && "bg-shade-3")}>
       <header className="mb-6">
         <h3 className="mb-6 heading-tertiary">{tier}</h3>
         <div className="flex items-center gap-8">

@@ -36,25 +36,28 @@ const userProfiles: UserProfile[] = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-mono-4 py-12">
+    <section className="bg-mono-4 py-24">
       <Banner
         heading="Hear from our VR community"
-        subheading="Testimonials"
+        subheading="Gamer Feedback"
         description="Hear from passionate gamers about how PulseVR transformed their VR gaming journey."
       />
 
       <div className="container-content grid grid-cols-3 gap-6">
         {userProfiles.map(({ name, title, image, quote }) => (
-          <div key={name} className="rounded-xl bg-mono-4 p-8">
+          <div
+            key={name}
+            className="rounded-xl border-2 border-shade-1 bg-testimonial-gradient p-8"
+          >
             <img
               src={image}
               alt={`${name} Profile`}
               className="mb-4 w-3/10 rounded-full"
             />
             <blockquote>
-              <p className="mb-2">{name}</p>
+              <p className="mb-2 text-xl font-semibold">{name}</p>
               <p className="mb-4 body-text">{title}</p>
-              <p>{quote}</p>
+              <p className="text-lg">{quote}</p>
             </blockquote>
           </div>
         ))}
