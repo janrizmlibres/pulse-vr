@@ -19,12 +19,12 @@ const Pricing = () => {
           tier="Core"
           price="$24.99"
           features={["350 Games", "50% Off Rentals", "Priority Support"]}
+          isHighlighted
         />
         <PriceCard
           tier="Elite"
           price="$44.99"
           features={["All 500+", "100% Off Rentals", "24/7 Support"]}
-          isHighlighted
         />
       </div>
     </section>

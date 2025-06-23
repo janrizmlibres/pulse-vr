@@ -30,7 +30,7 @@ const ImagePanel = ({
       <div className="pointer-events-none absolute inset-0 flex flex-col justify-end bg-panel p-6">
         <div className="w-4/5">
           <h3 className="mb-2 heading-tertiary-sm">{title}</h3>
-          <p className="body-text">{description}</p>
+          <p className="mb-4 body-text">{description}</p>
         </div>
       </div>
     </figure>
