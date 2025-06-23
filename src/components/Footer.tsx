@@ -27,7 +27,7 @@ const Footer = () => {
                 <EnvelopeIcon
                   size={32}
                   weight="fill"
-                  className="text-primary"
+                  className="text-shade-1"
                 />
                 <a
                   href="mailto:hello@pulsevrgaming.com"
@@ -37,7 +37,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <PhoneIcon size={32} weight="fill" className="text-primary" />
+                <PhoneIcon size={32} weight="fill" className="text-shade-1" />
                 <span className="body-text">1-888-VR-PULSE</span>
               </div>
             </div>

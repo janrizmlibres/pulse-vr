@@ -5,7 +5,7 @@ import { cn } from "../../utils";
 interface Props {
   label: string;
   iconName?: string;
-  type?: "plain" | "gradient";
+  type?: "plain" | "plain-inverted" | "gradient";
   className?: string;
   isLink?: boolean;
 }
@@ -35,6 +35,11 @@ const Button = ({
       [
         "bg-mono-4 hover:border-shade-1 hover:bg-mono-1 hover:text-mono-4 active:border-shade-1",
         "active:bg-mono-1 active:text-mono-4",
+      ].join("\\s"),
+    type === "plain-inverted" &&
+      [
+        "bg-mono-1 text-mono-4 hover:border-shade-1 hover:bg-mono-4 hover:text-mono-1 active:border-shade-1",
+        "active:bg-mono-4 active:text-mono-1",
       ].join("\\s")
   );
 

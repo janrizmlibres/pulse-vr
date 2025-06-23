@@ -38,7 +38,7 @@ const VideoPanel = ({
             <p className="mb-4 font-semibold tracking-wider">Available Now</p>
             <Button
               label="Learn More"
-              type="plain"
+              type="plain-inverted"
               className="rounded-xl border-shade-2"
             />
           </div>
