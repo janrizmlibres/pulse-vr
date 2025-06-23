@@ -6,9 +6,15 @@ import {
   XLogoIcon,
 } from "@phosphor-icons/react";
 
+const socialLinks: { name: string; Icon: React.ElementType }[] = [
+  { name: "Twitter", Icon: XLogoIcon },
+  { name: "Instagram", Icon: InstagramLogoIcon },
+  { name: "Discord", Icon: DiscordLogoIcon },
+];
+
 const Footer = () => {
   return (
-    <footer className="bg-mono-4 py-12">
+    <footer id="footer" className="bg-mono-4 py-12">
       <div className="container-content">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           <div className="lg:col-span-1">
@@ -47,29 +53,15 @@ const Footer = () => {
             <h3 className="heading-tertiary-sm">Follow Us</h3>
             <p className="mt-2 body-text">@PulseVRGaming</p>
             <div className="mt-4 flex gap-5">
-              <a
-                href="#"
-                className="text-mono-2 transition-colors hover:text-white"
-              >
-                <span className="sr-only">Twitter</span>
-                <XLogoIcon size={32} weight="fill" />
-              </a>
-
-              <a
-                href="#"
-                className="text-mono-2 transition-colors hover:text-white"
-              >
-                <span className="sr-only">Instagram</span>
-                <InstagramLogoIcon size={32} weight="fill" />
-              </a>
-
-              <a
-                href="#"
-                className="text-mono-2 transition-colors hover:text-white"
-              >
-                <span className="sr-only">Discord</span>
-                <DiscordLogoIcon size={32} weight="fill" />
-              </a>
+              {socialLinks.map(({ name, Icon }) => (
+                <a
+                  href="#footer"
+                  className="text-mono-2 transition-colors hover:text-white"
+                >
+                  <span className="sr-only">{name}</span>
+                  <Icon size={32} weight="fill" />
+                </a>
+              ))}
             </div>
           </div>
         </div>

@@ -5,14 +5,12 @@ const Pricing = () => {
   return (
     <section className="bg-mono-3 py-24">
       <TitleBlock
+        id="pricing"
         heading="Find the perfect plan for your VR journey"
         subheading="PulseVR Plans"
       />
 
-      <div
-        id="pricing"
-        className="container-content grid grid-cols-3 rounded-xl bg-mono-4 px-24 py-16"
-      >
+      <div className="container-content grid grid-cols-3 rounded-xl bg-mono-4 px-24 py-16">
         <PriceCard
           tier="Starter"
           price="$14.99"
