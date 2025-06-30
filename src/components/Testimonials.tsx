@@ -43,16 +43,16 @@ const Testimonials = () => {
         description="Hear from passionate gamers about how PulseVR transformed their VR gaming journey."
       />
 
-      <div className="container-content grid grid-cols-3 gap-6">
+      <div className="container-content grid gap-6 max-md:max-w-xl md:grid-cols-3">
         {userProfiles.map(({ name, title, image, quote }) => (
           <div
             key={name}
-            className="rounded-xl border-2 border-shade-1 bg-testimonial-gradient p-8"
+            className="rounded-xl border-2 border-shade-1 bg-testimonial-gradient p-4 lg:p-8"
           >
             <img
               src={image}
               alt={`${name} Profile`}
-              className="mb-4 w-3/10 rounded-full"
+              className="mb-4 w-22 rounded-full"
             />
             <blockquote>
               <p className="mb-2 text-xl font-semibold">{name}</p>

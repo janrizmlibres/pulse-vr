@@ -31,7 +31,7 @@ const Why = () => {
       />
 
       <div className="container-content grid items-center justify-center gap-12 md:grid-cols-2">
-        <ul className="space-y-8 md:w-7/10 md:pl-6">
+        <ul className="grid-cols-2 gap-4 space-y-8 sm:max-lg:grid lg:w-7/10 lg:pl-6">
           {items.map(({ title, description }) => (
             <li key={title}>
               <h3 className="mb-2 heading-tertiary-sm">{title}</h3>

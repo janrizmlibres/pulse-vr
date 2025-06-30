@@ -52,8 +52,8 @@ function App() {
         <How />
         <Spotlight />
         <Why />
-        {/* <Pricing /> */}
-        {/* <Testimonials /> */}
+        <Pricing />
+        <Testimonials />
         <FAQ />
       </main>
       <Footer />
