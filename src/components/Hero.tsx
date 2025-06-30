@@ -1,10 +1,20 @@
+import type { RefObject } from "react";
+
 import Button from "./shared/Button";
 
-const Hero = () => {
+interface Props {
+  ref: RefObject<HTMLElement | null>;
+  isNavSticky: boolean;
+}
+
+const Hero = ({ ref, isNavSticky }: Props) => {
   return (
-    <section className="bg-hero bg-cover pt-40 pb-48">
-      <div className="container-hero grid grid-cols-2">
-        <div>
+    <section
+      ref={ref}
+      className={`bg-hero bg-cover bg-center pt-40 pb-48 ${isNavSticky && "mt-24"}`}
+    >
+      <div className="container-content grid-cols-3 md:grid lg:grid-cols-2 xl:container-hero">
+        <div className="max-lg:col-span-2">
           <h1 className="mb-8 heading-primary">
             Dive Into VR: Your Gaming Adventure Starts Here
           </h1>
@@ -16,7 +26,7 @@ const Hero = () => {
           <Button
             label="Start Your Free Week"
             type="plain"
-            className="mr-4"
+            className="mr-4 mb-4"
             href="#pricing"
           />
           <Button label="Explore Games &darr;" href="#showcase" />
