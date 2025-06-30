@@ -37,7 +37,7 @@ const Essentials = () => {
         subheading="PulseVR Essentials"
       />
 
-      <div className="container-content grid gap-x-12 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container-content grid justify-center gap-x-8 gap-y-8 max-md:max-w-lg md:grid-cols-3 lg:gap-x-12">
         {features.map(({ image, title, description }) => (
           <FeatureCard
             key={title}

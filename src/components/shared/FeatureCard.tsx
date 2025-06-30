@@ -9,7 +9,7 @@ const FeatureCard = ({ imageSrc, altText, title, description }: Props) => {
   return (
     <div className="relative">
       <span className="absolute inset-0 z-0 mt-16 rounded-xl shadow-card"></span>
-      <div className="relative z-1 flex h-full flex-col px-8 pb-8">
+      <div className="relative z-1 flex h-full flex-col px-6 pb-6 lg:px-8 lg:pb-8">
         <img
           src={imageSrc}
           alt={altText}
