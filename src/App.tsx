@@ -48,8 +48,8 @@ function App() {
       <main className="overflow-x-hidden">
         <Hero ref={sectionHero} isNavSticky={shouldSticky} />
         <Essentials />
-        {/* <Rentals /> */}
-        {/* <How /> */}
+        <Rentals />
+        <How />
         {/* <Spotlight /> */}
         {/* <Why /> */}
         {/* <Pricing /> */}

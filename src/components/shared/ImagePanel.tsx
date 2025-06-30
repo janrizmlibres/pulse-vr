@@ -5,7 +5,7 @@ interface Props {
   altText: string;
   title: string;
   description: string;
-  isMain?: boolean;
+  className?: string;
 }
 
 const ImagePanel = ({
@@ -13,19 +13,19 @@ const ImagePanel = ({
   altText,
   title,
   description,
-  isMain = false,
+  className,
 }: Props) => {
   return (
     <figure
       className={cn(
         "relative overflow-hidden rounded-xl shadow-panel",
-        isMain && "row-span-2"
+        className
       )}
     >
       <img
         src={imageSrc}
         alt={altText}
-        className="h-full w-full transition-all duration-300 hover:scale-105"
+        className="h-full w-full object-cover transition-all duration-300 hover:scale-105"
       />
       <div className="pointer-events-none absolute inset-0 flex flex-col justify-end bg-panel p-6">
         <div className="w-4/5">
