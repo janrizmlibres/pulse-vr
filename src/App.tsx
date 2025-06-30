@@ -50,13 +50,13 @@ function App() {
         <Essentials />
         <Rentals />
         <How />
-        {/* <Spotlight /> */}
-        {/* <Why /> */}
+        <Spotlight />
+        <Why />
         {/* <Pricing /> */}
         {/* <Testimonials /> */}
-        {/* <FAQ /> */}
+        <FAQ />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

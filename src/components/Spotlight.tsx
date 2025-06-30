@@ -20,7 +20,7 @@ const Spotlight = () => {
         className="text-center"
       />
 
-      <div className="container-content mb-12 space-y-8">
+      <div className="container-content mb-12 space-y-6">
         <VideoPanel
           webmSrc={memoreumWebm}
           mp4Src={memoreumMp4}
@@ -39,7 +39,7 @@ const Spotlight = () => {
         />
       </div>
 
-      <div className="container-content grid grid-cols-2 gap-8">
+      <div className="container-content grid gap-6 md:grid-cols-2">
         <SpotlightCard
           imageSrc={astrobot}
           altText="Astro Bot Rescue Mission game front cover art"

@@ -80,6 +80,10 @@
   @apply font-orbitron text-3xl/[1.2] font-semibold sm:text-[44px]/[1.2];
 }
 
+@utility heading-secondary-break-lg {
+  @apply font-orbitron text-3xl/[1.2] font-semibold lg:text-[44px]/[1.2];
+}
+
 @utility heading-tertiary {
   @apply font-orbitron text-3xl leading-[1.4] font-semibold;
 }

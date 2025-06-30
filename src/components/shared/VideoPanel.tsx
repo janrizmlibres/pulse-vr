@@ -25,14 +25,14 @@ const VideoPanel = ({
         Your browser doesn't support HTML video.
       </video>
 
-      <div className="absolute inset-0 flex flex-col justify-end bg-spotlight p-12 pr-24">
-        <div className="grid grid-cols-[45fr_55fr] items-center gap-16">
+      <div className="inset-0 -mt-12 flex flex-col justify-end bg-spotlight p-4 sm:p-12 sm:max-lg:-mt-24 lg:absolute lg:pr-24">
+        <div className="grid grid-cols-1 items-center gap-x-16 gap-y-2 lg:grid-cols-[45fr_55fr]">
           <img
-            className="w-full rounded-xl border-2 border-solid border-shade-3"
+            className="w-full rounded-xl border-2 border-solid border-shade-3 max-lg:max-w-xs"
             src={imageSrc}
             alt={altText}
           />
-          <div>
+          <div className="max-sm:p-2">
             <h3 className="mb-4 heading-tertiary">{title}</h3>
             <p className="mb-2 body-text">{description}</p>
             <p className="mb-4 font-semibold tracking-wider">Available Now</p>
