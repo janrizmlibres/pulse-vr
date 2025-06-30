@@ -11,7 +11,6 @@
   --color-mono-4: #101212;
 
   --color-shade-1: #007f99;
-  --color-shade-2: #006a80;
   --color-shade-3: #00404c;
   --color-shade-4: #002a33;
 
@@ -44,10 +43,12 @@
 }
 
 @theme inline {
+  --color-shade-2: var(--stop-color);
+
   --background-image-btn-gradient: linear-gradient(
     90deg,
     var(--color-shade-1),
-    var(--color-shade-2)
+    var(--stop-color)
   );
 
   --background-image-testimonial-gradient: linear-gradient(
@@ -59,12 +60,18 @@
 }
 
 @layer base {
+  @property --stop-color {
+    syntax: "<color>";
+    initial-value: #006a80;
+    inherits: false;
+  }
+
   html {
-    @apply overflow-x-hidden scroll-smooth;
+    @apply scroll-smooth;
   }
 
   body {
-    @apply overflow-x-hidden font-roboto text-mono-1;
+    @apply font-roboto text-mono-1;
   }
 }
 

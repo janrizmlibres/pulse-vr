@@ -25,7 +25,7 @@ const ImagePanel = ({
       <img
         src={imageSrc}
         alt={altText}
-        className="h-full w-full object-cover transition-all duration-300 hover:scale-105"
+        className="h-full w-full object-cover transition-all duration-300 hover:scale-105 active:scale-105"
       />
       <div className="pointer-events-none absolute inset-0 flex flex-col justify-end bg-panel p-6">
         <div className="w-4/5">
