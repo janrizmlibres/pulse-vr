@@ -3,9 +3,8 @@ import TitleBlock from "./shared/TitleBlock";
 
 const Pricing = () => {
   return (
-    <section className="bg-mono-3 py-24">
+    <section id="pricing" className="bg-mono-3 py-24">
       <TitleBlock
-        id="pricing"
         heading="Find the perfect plan for your VR journey"
         subheading="PulseVR Plans"
       />
