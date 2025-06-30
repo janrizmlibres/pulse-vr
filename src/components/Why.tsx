@@ -30,8 +30,8 @@ const Why = () => {
         subheading="Why Choose PulseVR"
       />
 
-      <div className="container-content grid grid-cols-2 items-center justify-center gap-x-12">
-        <ul className="w-7/10 space-y-8 pl-6">
+      <div className="container-content grid items-center justify-center gap-12 md:grid-cols-2">
+        <ul className="space-y-8 md:w-7/10 md:pl-6">
           {items.map(({ title, description }) => (
             <li key={title}>
               <h3 className="mb-2 heading-tertiary-sm">{title}</h3>
@@ -43,7 +43,7 @@ const Why = () => {
         <img
           src={whyImg}
           alt="Mannequin head wearing a VR headset"
-          className="w-full rounded-xl"
+          className="w-full rounded-xl max-md:row-start-1"
         />
       </div>
     </section>
