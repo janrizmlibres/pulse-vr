@@ -50,7 +50,7 @@ function App() {
       <Header
         isOpen={isOpen}
         shouldSticky={shouldSticky}
-        onToggleOpen={() => setIsOpen((prev) => !prev)}
+        setIsOpen={setIsOpen}
       />
       <main className="overflow-x-hidden">
         <Hero ref={sectionHero} isNavSticky={shouldSticky} />
@@ -67,7 +67,7 @@ function App() {
 
       <Navbar
         isOpen={isOpen}
-        onToggleOpen={() => setIsOpen((prev) => !prev)}
+        setIsOpen={setIsOpen}
         isNavSticky={shouldSticky}
       />
     </>

@@ -8,6 +8,7 @@ interface Props {
   type?: "plain" | "plain-inverted" | "gradient";
   className?: string;
   href?: string;
+  onClick?: () => void;
 }
 
 const getIcon = (icon: string) => {
@@ -19,7 +20,7 @@ const getIcon = (icon: string) => {
   }
 };
 
-const Button = ({ label, iconName, type, className, href }: Props) => {
+const Button = ({ label, iconName, type, className, href, onClick }: Props) => {
   const styles = cn(
     "inline-flex cursor-pointer items-center gap-2 rounded-full border-3 border-solid border-primary",
     `text-lg font-semibold uppercase transition-all duration-300 hover:bg-shade-1 active:bg-shade-1 ${className}`,
@@ -47,13 +48,17 @@ const Button = ({ label, iconName, type, className, href }: Props) => {
 
   if (href) {
     return (
-      <a href={href} className={styles}>
+      <a href={href} className={styles} onClick={onClick}>
         {content}
       </a>
     );
   }
 
-  return <button className={styles}>{content}</button>;
+  return (
+    <button className={styles} onClick={onClick}>
+      {content}
+    </button>
+  );
 };
 
 export default Button;
