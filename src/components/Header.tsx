@@ -17,8 +17,10 @@ const Header = ({ shouldSticky }: { shouldSticky: boolean }) => {
         <img src={logo} alt="PulseVR Logo" className="h-7 lg:h-9" />
       </a>
 
-      <nav className="max-md:mobile-nav">
-        <ul className="flex items-center gap-4 lg:gap-8 xl:gap-12">
+      <nav
+        className={`max-md:mobile-nav ${isOpen ? "nav-open" : "nav-close"} ${isOpen && !shouldSticky && "fixed"}`}
+      >
+        <ul className="flex items-center gap-4 max-md:flex-col lg:gap-8 xl:gap-12">
           {links.map((link) => (
             <li key={link}>
               <a
@@ -40,7 +42,10 @@ const Header = ({ shouldSticky }: { shouldSticky: boolean }) => {
         </ul>
       </nav>
 
-      <button className="md:hidden" onClick={() => setIsOpen((prev) => !prev)}>
+      <button
+        className="z-10 md:hidden"
+        onClick={() => setIsOpen((prev) => !prev)}
+      >
         <ListIcon size={32} className={`${isOpen && "hidden"}`} />
         <XIcon size={32} className={`${!isOpen && "hidden"}`} />
       </button>

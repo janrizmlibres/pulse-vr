@@ -76,7 +76,15 @@
 }
 
 @utility mobile-nav {
-  @apply pointer-events-none invisible absolute top-0 left-0 flex h-screen w-full translate-x-full items-center justify-center opacity-0 backdrop-blur-xs transition-all duration-500 ease-in;
+  @apply absolute top-0 bottom-0 left-0 flex h-screen w-full items-center justify-center backdrop-blur-xs transition-all duration-500 ease-in;
+}
+
+/* @utility nav-open { */
+/* @apply pointer-events-auto visible translate-x-0 opacity-100; */
+/* } */
+
+@utility nav-close {
+  @apply pointer-events-none invisible translate-x-full opacity-0;
 }
 
 @utility heading-primary {
