@@ -71,17 +71,17 @@
   }
 
   body {
-    @apply font-roboto text-mono-1;
+    @apply relative font-roboto text-mono-1;
   }
 }
 
 @utility mobile-nav {
-  @apply absolute top-0 bottom-0 left-0 flex h-screen w-full items-center justify-center backdrop-blur-xs transition-all duration-500 ease-in;
+  @apply fixed top-0 left-0 z-2 flex h-screen w-full items-center justify-center bg-mono-3/90 backdrop-blur-xs transition-all duration-500 ease-in;
 }
 
-/* @utility nav-open { */
-/* @apply pointer-events-auto visible translate-x-0 opacity-100; */
-/* } */
+@utility nav-open {
+  @apply pointer-events-auto visible translate-x-0 opacity-100;
+}
 
 @utility nav-close {
   @apply pointer-events-none invisible translate-x-full opacity-0;

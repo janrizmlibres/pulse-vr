@@ -8,12 +8,15 @@ import Hero from "./components/Hero";
 import How from "./components/How";
 import Pricing from "./components/Pricing";
 import Rentals from "./components/Rentals";
+import Navbar from "./components/shared/Navbar";
 import Spotlight from "./components/Spotlight";
 import Testimonials from "./components/Testimonials";
 import Why from "./components/Why";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
   const [shouldSticky, setShouldSticky] = useState(false);
+
   const sectionHero = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -44,7 +47,11 @@ function App() {
 
   return (
     <>
-      <Header shouldSticky={shouldSticky} />
+      <Header
+        isOpen={isOpen}
+        shouldSticky={shouldSticky}
+        onToggleOpen={() => setIsOpen((prev) => !prev)}
+      />
       <main className="overflow-x-hidden">
         <Hero ref={sectionHero} isNavSticky={shouldSticky} />
         <Essentials />
@@ -57,6 +64,12 @@ function App() {
         <FAQ />
       </main>
       <Footer />
+
+      <Navbar
+        isOpen={isOpen}
+        onToggleOpen={() => setIsOpen((prev) => !prev)}
+        isNavSticky={shouldSticky}
+      />
     </>
   );
 }
