@@ -19,7 +19,7 @@ const VideoPanel = ({
 }: Props) => {
   return (
     <div className="relative overflow-hidden rounded-xl border-2 border-solid border-shade-3">
-      <video className="w-full" autoPlay loop>
+      <video className="w-full" autoPlay loop muted playsInline>
         <source src={webmSrc} type="video/webm" />
         <source src={mp4Src} type="video/mp4" />
         Your browser doesn't support HTML video.
