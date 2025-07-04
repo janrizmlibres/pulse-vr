@@ -20,6 +20,7 @@ Welcome to PulseVR! This project is a responsive landing page for a fictional vi
 - [🌐 Demo](#-demo)
 - [📝 Description](#-description)
 - [✨ Features](#-features)
+- [💻 Technologies Used]($-technologies-used)
 - [🛠️ Setup Project](#️-setup-project)
   - [🍴 Prerequisites](#-prerequisites)
   - [🚀 Install Project](#-install-project)
