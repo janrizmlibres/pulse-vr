@@ -5,7 +5,7 @@
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fpulse-vr.vercel.app%2F)](http://pulse-vr.vercel.app/)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-![Hero Section](images/hero.png)
+![Hero Section](images/hero-new.png)
 
 ## 🌐 Demo
 
