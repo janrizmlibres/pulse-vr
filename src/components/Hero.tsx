@@ -11,7 +11,7 @@ const Hero = ({ ref, isNavSticky }: Props) => {
   return (
     <section
       ref={ref}
-      className={`bg-hero bg-cover bg-center pt-40 pb-48 ${isNavSticky && "mt-24"}`}
+      className={`bg-hero-mobile bg-cover bg-center pt-24 pb-32 md:bg-hero md:pt-40 md:pb-48 ${isNavSticky && "mt-24"}`}
     >
       <div className="container-content grid-cols-3 md:grid lg:grid-cols-2 xl:container-hero">
         <div className="max-lg:col-span-2">
